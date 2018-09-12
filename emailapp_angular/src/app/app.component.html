@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Contact Us</h1>
+    <div class="col-md-6 col-md-offset-3">
+        <label>Name</label>
+        <input type="text" name="Name" [(ngModel)]="Name" required="" class="form-control" autocomplete="on">
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+        <label>Business</label>
+        <input type="text" name="Business" [(ngModel)]="Business" required="" class="form-control" autocomplete="on">
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+        <label>Phone</label>
+        <input type="number" name="Phone" [(ngModel)]="Phone" required="" class="form-control" autocomplete="on">
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+        <label>Email</label>
+        <input type="email" name="Email" [(ngModel)]="Email" required="" class="form-control" autocomplete="on">
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+        <label>Message</label>
+        <textarea name="Message" [(ngModel)]="Message" class="form-control" required=""></textarea>
+    </div>
+    <div class="col-md-6 col-md-offset-3">
+        <br>
+        <input type="submit" name="Submit" class="btn btn-primary" value="Submit" (click)="sendEmail()" [disabled]="disable">
+    </div>
+</div>
