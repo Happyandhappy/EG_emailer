@@ -20,7 +20,7 @@ function sendEmail($to, $from , $content)
 	$email->setSubject($subject);
 	$email->addTo( $to, "Receiver");
 	$email->addContent("text/plain", $content);
-	$sendgrid = new \SendGrid("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");	
+	$sendgrid = new \SendGrid("");	
 	try 
 	{
 	    $response = $sendgrid->send($email);   
